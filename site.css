@@ -1,0 +1,46 @@
+html,
+container {
+margin-top: 50px;
+margin-left:100px;
+margin-right:100px;
+}
+
+h1 {
+background-color: #e6e6fa;
+color: #353839;
+  border: 1px solid #D6A800;
+  padding: 10px;
+
+}
+
+h2 {background-color: #ffe4e1;
+color: #353839;
+  border: 1px solid #D6A800;
+  padding: 10px;
+}
+
+h3 {
+background-color: #ffb7c5;
+color: #353839;
+  border: 1px solid;
+  padding: 10px;
+}
+
+h4 {background-color: #ffddca;
+color: #353839;
+  border: 1px solid #D6A800;
+  padding: 10px;
+}
+
+a {
+  color: #0a7e8c;
+  text-decoration: none;
+}
+
+a:hover {
+color: #d470a2;
+}
+
+a:visited {
+color: #aa98a9;
+}
