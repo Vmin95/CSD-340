@@ -1,0 +1,48 @@
+html, 
+body{
+font-family: Arial, sans-serif;
+}
+
+h1 {
+text-align: center;
+}
+
+h3 {
+font-weight: 500;
+}
+
+.left {
+float: left;
+width: 45%;
+font-weight: 300;
+padding: 10px;
+  border: 1px solid red;
+  border-radius: 15px;
+}
+
+.right {
+float: right;
+font-weight: 300;
+width: 45%;
+padding: 10px;
+  border: 1px dashed red;
+  border-radius: 15px;
+}
+
+.last {
+float: right;
+margin-top: 60%;
+width: 100%;
+margin-bottom: 20px;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+a {
+float: right;
+margin-bottom: 20px;
+margin-top: 60%;
+width: 100%;
+}
