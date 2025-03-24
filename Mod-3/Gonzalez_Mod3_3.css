@@ -1,10 +1,13 @@
 html, 
 body{
-font-family: Arial, sans-serif;
+font-family: "Sofia", Sans-Serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1 {
 text-align: center;
+text-shadow: 3px 3px 3px #ababab;
 }
 
 h3 {
@@ -13,20 +16,24 @@ font-weight: 500;
 
 .left {
 float: left;
-width: 45%;
+margin-left: 5%;
+margin-top: 5%;
+width: 40%;
 font-weight: 300;
 padding: 10px;
-  border: 1px solid red;
-  border-radius: 15px;
+  border: 10px solid teal;
+  border-radius: 30px;
 }
 
 .right {
 float: right;
+margin-top: 5%;
+margin-right: 5%;
 font-weight: 300;
-width: 45%;
+width: 40%;
 padding: 10px;
-  border: 1px dashed red;
-  border-radius: 15px;
+  border: 10px dashed teal;
+  border-radius: 30px;
 }
 
 .last {
@@ -43,6 +50,7 @@ text-decoration: underline;
 a {
 float: right;
 margin-bottom: 20px;
-margin-top: 60%;
-width: 100%;
+margin-top: 15%;
+width: 5%;
+font-family: Arial;
 }
