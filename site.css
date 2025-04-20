@@ -18,7 +18,8 @@ h1 {
   size: 30%
 }
 
-h2 {background-color: #e6e6fa;
+h2 {
+  background-color: #e6e6fa;
   text-color: #353839;
   text-align: center;
   border: 0px solid #D6A800;
@@ -26,14 +27,15 @@ h2 {background-color: #e6e6fa;
   margin-top: -4%;
 }
 
-img {img-align: center;
-     margin-top:-10%;
+img {
+  margin-top:-10%;
      margin-bottom:-5%;
      width: 400px;
      height: 266.5px;
 }
 
 h3 {
+text-align: center;
 margin-top:-1%;
 background-color: #ffb7c5;
 color: #353839;
