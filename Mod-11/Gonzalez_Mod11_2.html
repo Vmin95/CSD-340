@@ -1,0 +1,133 @@
+<!-- Julia Gonzalez Module11.2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 11.2: JavaScript - Part 3</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    input[type="text"] {
+      width: 60%;
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #output {
+      margin-top: 20px;
+      font-family: monospace;
+      color: #222;
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #007bff;
+      border-radius: 4px;
+    }
+
+    hr {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2><strong>Assignment 11.2: JavaScript - Part 3</strong></h2>
+
+    <p>
+      This is an interactive To Do List. Type in your first item in the text box, then click <strong>Add</strong>.
+      Click the <strong>Display</strong> button to see current items in the list.
+      Click on <strong>Delete Last Entry</strong> if you'd like to remove the last entry.
+    </p>
+
+    <input type="text" id="itemInput" placeholder="Enter a task">
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLastEntry()">Delete Last Entry</button>
+    <button onclick="displayList()">Display</button>
+
+    <hr>
+
+    <div id="output"></div>
+  </div>
+
+  <script>
+    let itemList = [];
+
+    function addItem() {
+      const input = document.getElementById("itemInput");
+      const value = input.value.trim();
+      if (value) {
+        itemList.push(value);
+        input.value = "";
+      }
+    }
+
+    function deleteLastEntry() {
+      if (itemList.length > 0) {
+        itemList.pop();
+      }
+    }
+
+    function displayList() {
+      const output = document.getElementById("output");
+      output.innerHTML = "";
+
+      if (itemList.length === 0) {
+        output.textContent = "No items in the list.";
+        return;
+      }
+
+      let result = "";
+      for (let i = 0; i < itemList.length; i++) {
+        result += `Item ${i + 1} = ${itemList[i]}<br>`;
+      }
+
+      output.innerHTML = result;
+    }
+  </script>
+
+</body>
+</html>
